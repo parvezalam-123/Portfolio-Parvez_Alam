@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,600&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       margin: 0;
@@ -74,7 +77,8 @@
       font-size: 2.8rem;
       margin: 70px O;
     }
-    .leftSection .buttons{
+
+    .leftSection .buttons {
       padding: 20px 0;
     }
 
@@ -86,7 +90,12 @@
       border-radius: 6px;
       font-size: 20px;
       cursor: pointer;
-    } 
+    }
+
+    .leftSection .btn a {
+      color: #e8e7eb;
+      text-decoration: none;
+    }
 
     .rightSection {
       width: 80%;
@@ -181,6 +190,17 @@
       color: gray;
       padding: 12px 0;
     }
+
+    .footer-second ul>li {
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }
+
+    .footer-second .img-2 {
+      display: flex;
+      gap: 5px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
@@ -191,10 +211,10 @@
       <div class="right">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Services</a></li>
-          <li><a href="/">Projects</a></li>
-          <li><a href="/">Contect Me</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contect">Contect Me</a></li>
         </ul>
       </div>
     </nav>
@@ -207,8 +227,14 @@
         <div>Web Developer</div>
         <span id="element"></span>
         <div class="buttons">
-          <button class="btn">Download Resume</button>
-          <button class="btn">Visit Github</button>
+          <button class="btn">
+            <a href=" resume.pdf" download="resume.pdf" img src=" resume.pdf"> Resume</a>
+          </button>
+          <button class="btn">
+            <a href="https://github.com/parvezalam-123" target="_blank">
+              Visit Github
+            </a>
+          </button>
         </div>
       </div>
       <div class="rightSection">
@@ -274,11 +300,26 @@
       </div>
       <div class="footer-second">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contect me</li>
+          <div class="img-2">
+            <i class="fa-solid fa-house"></i>
+            <li id="/">Home</li>
+          </div>
+          <div class="img-2">
+            <i class="fa-solid fa-a"></i>
+            <li id="about">About</li>
+          </div>
+          <div class="img-2">
+            <i class="fa-solid fa-s"></i>
+            <li id="services">Services</li>
+          </div>
+          <div class="img-2">
+            <i class="fa-solid fa-p"></i>
+            <li id="project">Projects</li>
+          </div>
+          <div class="img-2">
+            <i class="fa-solid fa-phone"></i>
+            <li id="contect">6386646497</li>
+          </div>
         </ul>
       </div>
       <div class="footer-third">
